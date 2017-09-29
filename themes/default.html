@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css"/>
+
+  <style>
+    .container {
+      margin-top: 2em;
+    }
+
+    @media (min-width: 768px) {
+      #right-panel-background {
+        right: 0;
+        width: 50%;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: #202020;
+        z-index: -1;
+      }
+
+      .container {
+        margin-top: 5em;
+      }
+
+      .main {
+        width: 50%;
+        padding: 2em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        clear: right;
+      }
+
+      pre {
+        clear: right;
+        float: right;
+        margin-right: -100%;
+        padding-left: 4em;
+        width: 100%;
+      }
+
+      .hljs {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="right-panel-background"></div>
+
+<div class="main">
+  {{ content }}
+</div>
+</div>
+
+</body>
+</html>
