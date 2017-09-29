@@ -1,3 +1,8 @@
+<!--#
+title: 'Slatify'
+description: 'Minimal Markdown to HTML documentation generator'
+#-->
+
 # Slatify
 
 Minimal Markdown to HTML generator for beautiful documentations.
