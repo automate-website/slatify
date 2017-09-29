@@ -1,5 +1,5 @@
 {
-  "name": "Slatify",
+  "name": "slatify",
   "version": "1.0.0",
   "description": "Minimal Markdown to HTML documentation generator",
   "main": "lib/slatify.js",
