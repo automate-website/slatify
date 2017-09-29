@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <title>Slatify</title>
+  <meta name="description" content="Minimal Markdown to HTML documentation generator" />
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/agate.min.css"/>
+
+  <style>
+    .container {
+      margin-top: 2em;
+    }
+
+    @media (min-width: 768px) {
+      #right-panel-background {
+        right: 0;
+        width: 50%;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: #202020;
+        z-index: -1;
+      }
+
+      .container {
+        margin-top: 5em;
+      }
+
+      .main {
+        width: 50%;
+        padding: 2em;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        clear: right;
+      }
+
+      pre {
+        clear: right;
+        float: right;
+        margin-right: -100%;
+        padding-left: 4em;
+        width: 100%;
+      }
+
+      .hljs {
+        padding: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="right-panel-background"></div>
+
+<div class="main">
+  <h1 id="slatify">Slatify</h1>
+<p>Minimal Markdown to HTML generator for beautiful documentations.</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Install package<pre><code class="langulage-bash hljs"> $ npm install -D slatify</code></pre></li>
+<li>Add run command to <code>package.json</code><pre><code class="langulage-json hljs"> {
+   ...
+   "scripts": {
+     "build-html": "node node_modules/lib/slatify-cli README.md index.html"
+   },
+   ...
+ }</code></pre></li>
+<li><p>Build html</p>
+<pre><code class="langulage-bash hljs"> $ npm run build-html</code></pre></li>
+</ol>
+<h2 id="license">License</h2>
+<p>MIT</p>
+
+</div>
+</div>
+
+</body>
+</html>
