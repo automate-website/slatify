@@ -2,7 +2,7 @@
   "name": "slatify",
   "version": "1.0.0",
   "description": "Minimal Markdown to HTML documentation generator",
-  "main": "lib/slatify.js",
+  "main": "lib/slatify",
   "scripts": {
     "build": "node lib/slatify-cli README.md index.html"
   },
@@ -11,7 +11,7 @@
   },
   "author": "automate.website",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "highlight.js": "^9.12.0",
     "lodash": "^4.17.4",
     "marked": "^0.3.6"
